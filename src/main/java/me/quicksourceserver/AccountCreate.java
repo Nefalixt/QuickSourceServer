@@ -12,8 +12,12 @@ import java.net.Socket;
 public class AccountCreate {
 
     private Socket socket = null;
-    private ServerSocket server = null;
-    private DataInputStream in = null;
+    private ServerSocket clientsocket = null;
+    private DataInputStream datainput = null;
+    String receivingFile = null; //@BurgBoi
+
+    public void receiveRegistry(int port) {
+    }
 
     int check;
 

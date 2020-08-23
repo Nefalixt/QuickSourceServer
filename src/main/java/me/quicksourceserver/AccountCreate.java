@@ -17,6 +17,7 @@ public class AccountCreate {
     String receivingFile = null; //@BurgBoi
 
     public void receiveRegistry(int port) {
+        
     }
 
     int check;

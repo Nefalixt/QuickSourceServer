@@ -22,7 +22,6 @@ public class Register {
 
     public void makeLogin(String username, String password) {
         try {
-            Fil
 
         } catch (IOException e) {
             System.out.println("");

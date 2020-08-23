@@ -1,3 +1,5 @@
+package me.quicksourceserver;
+
 public class AccountCreation {
     public void signUp(String username, String password) {
         try {

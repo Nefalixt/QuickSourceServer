@@ -1,3 +1,5 @@
+package me.quicksourceserver;
+
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -11,15 +13,15 @@ public class ServerUtils {
 
 	public ServerUtils(int port) {
 		try {
-            server = new ServerSocket();
+			server = new ServerSocket();
 			System.out.println("server started");
 
 			System.out.println("waiting for client");
 
-            socket = server.accept();
+			socket = server.accept();
 			System.out.println("client accepted");
 
-            in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
+			in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
 
 			String line = "";
 
@@ -34,8 +36,8 @@ public class ServerUtils {
 			}
 			System.out.println("closing connection");
 
-            socket.close();
-            in.close();
+			socket.close();
+			in.close();
 		} catch (IOException i) {
 			System.out.println(i);
 		}

@@ -14,10 +14,10 @@ public class AccountCreate {
     private Socket socket = null;
     private ServerSocket clientsocket = null;
     private DataInputStream datainput = null;
-    String receivingFile = null; //@BurgBoi
+    String receivingFile = ; //@BurgBoi
 
     public void receiveRegistry(int port) {
-        
+
     }
 
     int check;
@@ -28,7 +28,7 @@ public class AccountCreate {
 
     }
 
-    public void makeLogin(String username, String password, AccountType accountType) {
+    public void(String username, String password, AccountType accountType) {
         try {
             File file = new File("Users/", username);
             File dir = new File("Users/");
